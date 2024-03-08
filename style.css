@@ -1,0 +1,244 @@
+@font-face {
+    font-family: my;
+    src: url(Heading-Now-Variable.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    color: white;
+    background-color: #000;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 15vh;
+    padding: 1rem;
+    /* border: 2px solid red; */
+}
+.image-logo{
+    width: 280px;
+}
+nav a{
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+ 
+nav{
+    display: flex;
+    text-transform: uppercase;
+    gap: 2rem;
+}
+
+.btng{
+padding:15px 30px;
+cursor: pointer;
+border-radius: 3px;
+font-size: 1.2rem;
+}
+
+
+
+#btn1{
+background-color: black;
+color: white;
+border: none;
+}
+#btn2{
+border: none;
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+section{
+    width: 100vw;
+    height: 85vh;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    /* border: 2px solid lightcoral; */
+    align-items: center;
+    margin: auto;
+
+
+}
+section >h1{
+    font-size: 9.2rem;
+    display: flex;
+    letter-spacing: 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.spang{
+    font-size: 2rem;
+    background-color: #7E3836;
+    padding: 33px 30px;
+    border-radius: 50px;
+}
+.spang a{
+    text-decoration: none;
+    color: white;
+}
+.imgofmain{
+    width: 180px;
+
+}
+.firstimg{
+    position: absolute;
+    right: 10%;
+    bottom: 17%;
+    border-radius: 4px;
+}
+.secondimg{
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    border-radius: 4px;
+}
+/* .thirdimg{
+    width: 290px;
+    left: 19%;
+    position: absolute;
+    bottom: 11%;
+}
+.forthimg{
+    position: absolute;
+    top: 3%;
+    width: 290px;
+    right: 7.5%;
+} */
+
+#loader{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+#loader h1{
+    color: rgb(255, 255, 255);
+    font-stretch: 750%;
+    font-family: my;
+    font-size: 3.5vw;
+    font-weight: 200;
+
+}
+#page22{
+    width: 100%;
+    height: 100%;
+overflow: hidden;
+}
+#page22 h1{
+    font-family: my;
+    color: rgb(255, 249, 249);
+    font-stretch: 350%;
+    font-size: 40vw;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.icong{
+ 
+    color: white;
+display: none;
+}
+#page33{
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+}
+
+  
+    @media screen and (max-width: 1226px) {
+     
+        #navbar {
+            display: none;
+        }
+   }
+    @media screen and (max-width: px) {
+        .header button{
+            display: none;
+
+        }
+        
+        #navbar {
+            display: none;
+        }
+      
+      
+       
+        .header{
+            justify-content: space-between;
+    
+        }
+      
+   }
+
+    @media screen and (max-width: 1640px) {
+       #main img{
+           display: none;
+       }
+   }
+
+  @media screen and (max-width: 963px){
+    section > h1{
+        font-size: 6.2rem;
+    }
+    section{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 815px){
+    section > h1{
+        font-size: 3.2rem;
+    }
+    .icong{
+        display: block;
+        font-size: 1.6rem;
+    }
+    .header button{
+        display: none;
+    }
+    .spang{
+    font-size: 1.3rem;
+        padding: 2rem 1rem;
+    }
+
+  }
+  @media screen and (max-width: 565px){
+    section > h1{
+        font-size: 2.2rem;
+    }
+    .spang{
+        font-size: 1rem;
+        text-align: center;
+        line-height: 3px;
+        letter-spacing: normal;
+           
+        }
+        .header{
+            padding: none;
+            justify-content: space-between;
+        }
+        .header img{
+            width: 120px;
+        }
+  }
